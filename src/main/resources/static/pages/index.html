@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<input type="button" id="addBut" name="addBut" value="增加"><br>
+<input type="button" id="editBut" name="editBut" value="更新"><br>
+<input type="button" id="deleteBut" name="deleteBut" value="删除"><br>
+<input type="button" id="getBut" name="getBut" value="查询"><br>
+<input type="button" id="listBut" name="listBut" value="分页显示"><br>
+<div id="showDiv"></div>
+<script>
+    // $(editBut1).on("click", function () {
+    //     $.ajax({
+    //         url: "/restful",
+    //         type: "put",
+    //         data: {
+    //              //_method: "put",
+    //             name: "yuhao",
+    //             age: "18",
+    //             birthday: "2000-11-11"
+    //         },
+    //         success: function (data) {
+    //             alert(data);
+    //         }
+    //     })
+    // });
+
+    $(editBut).on("click", function () {
+        $.ajax({
+            url: "/restful1",
+            type: "delete",
+            //dataType:"json",
+            //contentType:"application/json",
+            data: {
+                //_method:"delete",
+                name: "yuhao",
+                age: "18",
+                birthday: "2000-11-11"
+            },
+            success: function (data) {
+                alert(data.name);
+            }
+        })
+    });
+
+    // $(editBut).on("click", function () {
+    //     $.ajax({
+    //         url: "/restful2",
+    //         type: "delete",
+    //         //dataType:"json",
+    //         contentType:"application/json",
+    //         data: JSON.stringify({
+    //             //_method:"delete",
+    //             name: "yuhao",
+    //             age: "18",
+    //             birthday: "2000-11-11"
+    //         }),
+    //         success: function (data) {
+    //             alert(data.name);
+    //         }
+    //     })
+    // });
+</script>
+</body>
+</html>
