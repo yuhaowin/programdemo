@@ -1,4 +1,4 @@
-package com.yuhaowin.annotation;
+package com.yuhaowin.annotation.ormannotation;
 
 
 /**
