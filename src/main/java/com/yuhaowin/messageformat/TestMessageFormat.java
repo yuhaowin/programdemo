@@ -28,7 +28,15 @@ public class TestMessageFormat {
         }
    }
 
+   public static void testString(){
+       String[] typesList = new String[0];
+       String[] data = {"yuhao","eric","jack","mark"};
+       typesList = data;
+       System.out.println(typesList.length);
+   }
+
     public static void main(String[] args) {
-        TestMessageFormat.mytest();
+       // TestMessageFormat.mytest();
+        TestMessageFormat.testString();
     }
 }
